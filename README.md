@@ -8,6 +8,11 @@ Representational state transfer (REST) or RESTful web services are one way of pr
 
 # Flask Examples
 
+Start Application
+```bash
+./flask-examples/app.py
+```
+
 Get entire list
 ```bash
 curl http://localhost:5000/todos
@@ -15,7 +20,7 @@ curl http://localhost:5000/todos
 
 Get single task
 ```bash
-curl -X GET  http://localhost:5000/todos/todo1
+curl -X GET http://localhost:5000/todos/todo1
 ```
 
 Create new task
@@ -31,6 +36,18 @@ curl -X DELETE http://localhost:5000/todos/todo1
 Update task
 ```bash
 curl -X PUT http://localhost:5000/todos/todo2 -d "task=Do something else"
+```
+
+# Flask Examples
+
+Start Application
+```bash
+node ./express-examples/app.js
+```
+
+Example call
+```bash
+curl -i -X GET http://localhost:3000/book
 ```
 
 
